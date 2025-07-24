@@ -50,7 +50,7 @@ const AdminLogin = () => {
       sessionStorage.setItem("token", res.data.token);
       sessionStorage.setItem("user", JSON.stringify(res.data.user));
 
-      navigate("/admin/pending-products"); 
+      navigate("/admin/dashboard"); 
     } catch (err) {
       const msg = err.response?.data?.message || "Login failed.";
       setMessage(msg);

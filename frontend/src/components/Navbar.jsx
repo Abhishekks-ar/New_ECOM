@@ -75,7 +75,7 @@ const Navbar = () => {
                   {item.label}
                 </Button>
               ))}
-              <Button color="inherit" onClick={token ? handleLogout : () => navigate("/login")}>
+              <Button color="inherit" onClick={token ? handleLogout : () => navigate("/")}>
                 {token ? "Logout" : "Login"}
               </Button>
             </Box>

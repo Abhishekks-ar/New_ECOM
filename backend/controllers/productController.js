@@ -33,9 +33,9 @@ const getAllProductsBySeller = async (req, res) => {
   try {
     const { sellerId } = req.params;
 
-    const products = await Product.find({ sellerId });
+    const products = await Product.find({ seller: sellerId });
 
-    res.status(200).json(products);
+    res.status(200).json({ products }); // wrap in { products }
   } catch (err) {
     console.error("Error fetching seller's products:", err);
     res.status(500).json({ error: "Failed to fetch products" });

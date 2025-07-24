@@ -17,7 +17,7 @@ const SellerAllProducts = () => {
 
   const token = sessionStorage.getItem("token");
   const sellerId = sessionStorage.getItem("sellerId");
-  console.log("Seller ID:", sellerId);
+  // console.log("Seller ID:", sellerId);
 
 
   useEffect(() => {
@@ -27,7 +27,9 @@ const SellerAllProducts = () => {
           `http://localhost:3000/products/seller-all/${sellerId}`
           
         );
-        setProducts(res.data.products);
+        // console.log("Fetched products:", res.data);
+        setProducts(res.data.products || []);
+
       } catch (err) {
         console.error("Error fetching all seller products:", err);
       } finally {
