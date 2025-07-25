@@ -38,7 +38,7 @@ const Login = () => {
     const loginData = { email, password, role };
 
     axios
-      .post("https://new-ecom-omega.vercel.app/auth/login", loginData)
+      .post("https://new-ecom-roj3vse20-abhishek-k-s-s-projects.vercel.app/auth/login", loginData)
       .then((res) => {
         const { token, user } = res.data;
 

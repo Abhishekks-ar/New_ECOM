@@ -8,7 +8,7 @@ app.use(morgan("dev"));
 const cors = require("cors");
 
 app.use(cors({
-  origin: 'https://new-ecom-z6cx.vercel.app', // ✅ your frontend domain
+  origin: 'https://new-ecom-z6cx-5u8dvqtb1-abhishek-k-s-s-projects.vercel.app/', // ✅ your frontend domain
   credentials: true,
 }));
 
