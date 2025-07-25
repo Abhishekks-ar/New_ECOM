@@ -7,14 +7,10 @@ app.use(morgan("dev"));
 
 const cors = require("cors");
 
-app.use(
-  cors({
-    origin: ['https://new-ecom-z6cx.vercel.app'],
-    credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE","PATCH"],
-    allowedHeaders: ['Content-Type', 'Authorization','token'],
-  })
-);
+app.use(cors({
+  origin: 'https://new-ecom-z6cx.vercel.app', // ✅ your frontend domain
+  credentials: true,
+}));
 
 require("dotenv").config();
 
