@@ -31,7 +31,7 @@ function ForgotPassword() {
     setMessage("");
 
     try {
-      const res = await axios.post("https://new-ecom-omega.vercel.app/auth/forgot-password", {
+      const res = await axios.post("https://new-ecom-roj3vse20-abhishek-k-s-s-projects.vercel.app/auth/forgot-password", {
         email,
       });
       setMessage(res.data.message);

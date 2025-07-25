@@ -23,7 +23,7 @@ const ProductDetails = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await axios.get(`https://new-ecom-omega.vercel.app/products/${id}`);
+        const res = await axios.get(`https://new-ecom-roj3vse20-abhishek-k-s-s-projects.vercel.app/products/${id}`);
         setProduct(res.data);
       } catch (err) {
         console.error("Error fetching product details:", err);
@@ -39,7 +39,7 @@ const ProductDetails = () => {
     if (!user?.id) return alert("Please login first");
 
     try {
-      await axios.post("https://new-ecom-omega.vercel.app/user/cart/add", {
+      await axios.post("https://new-ecom-roj3vse20-abhishek-k-s-s-projects.vercel.app/user/cart/add", {
         userId: user.id,
         productId: product._id,
         quantity: 1,

@@ -41,7 +41,7 @@ const Products = () => {
     const fetchProducts = async () => {
       try {
         const res = await axios.get(
-          "https://new-ecom-omega.vercel.app/products/by-category"
+          "https://new-ecom-roj3vse20-abhishek-k-s-s-projects.vercel.app/products/by-category"
         );
         setProductsByCategory(res.data);
       } catch (err) {
@@ -65,7 +65,7 @@ const Products = () => {
       const userId = user?.id;
 
       const res = await axios.post(
-        "https://new-ecom-omega.vercel.app/user/cart/add",
+        "https://new-ecom-roj3vse20-abhishek-k-s-s-projects.vercel.app/user/cart/add",
         {
           userId,
           productId: product._id,

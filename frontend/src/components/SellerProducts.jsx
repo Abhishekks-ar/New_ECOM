@@ -24,7 +24,7 @@ const SellerAllProducts = () => {
     const fetchProducts = async () => {
       try {
         const res = await axios.get(
-          `https://new-ecom-omega.vercel.app/products/seller-all/${sellerId}`
+          `https://new-ecom-roj3vse20-abhishek-k-s-s-projects.vercel.app/products/seller-all/${sellerId}`
           
         );
         // console.log("Fetched products:", res.data);
