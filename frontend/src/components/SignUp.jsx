@@ -60,7 +60,7 @@ const SignUp = () => {
     };
 
     axios
-      .post("http://localhost:3000/auth/signup", signupData)
+      .post("https://new-ecom-1220kqevl-abhishek-k-s-s-projects.vercel.app/auth/signup", signupData)
       .then((res) => {
         alert(res.data.message);
         setStep("otp");
@@ -72,7 +72,7 @@ const SignUp = () => {
 
   const handleVerifyOtp = () => {
     axios
-      .post("http://localhost:3000/auth/verify-otp", { email, otp })
+      .post("https://new-ecom-1220kqevl-abhishek-k-s-s-projects.vercel.app/auth/verify-otp", { email, otp })
       .then((res) => {
         const { token, user } = res.data;
         sessionStorage.setItem("token", token);
@@ -94,7 +94,7 @@ const SignUp = () => {
 
   const handleResendOtp = () => {
     axios
-      .post("http://localhost:3000/auth/resend-otp", { email })
+      .post("https://new-ecom-1220kqevl-abhishek-k-s-s-projects.vercel.app/auth/resend-otp", { email })
       .then(() => {
         alert("OTP resent to your email.");
       })

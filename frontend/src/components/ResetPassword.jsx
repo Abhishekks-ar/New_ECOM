@@ -48,7 +48,7 @@ function ResetPassword() {
 
     try {
       const res = await axios.post(
-        "http://localhost:3000/auth/reset-password",
+        "https://new-ecom-1220kqevl-abhishek-k-s-s-projects.vercel.app/auth/reset-password",
         {
           token,
           role,
