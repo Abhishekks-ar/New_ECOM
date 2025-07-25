@@ -64,7 +64,7 @@ const AddProduct = () => {
       const token = sessionStorage.getItem("token");
 
       const response = await axios.post(
-        "https://new-ecom-1220kqevl-abhishek-k-s-s-projects.vercel.app/seller/add-product",
+        "https://new-ecom-omega.vercel.app/seller/add-product",
         cleanedProduct,
         {
           headers: {

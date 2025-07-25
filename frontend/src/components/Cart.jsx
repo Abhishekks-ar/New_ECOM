@@ -31,7 +31,7 @@ const Cart = () => {
     const fetchCart = async () => {
       try {
         const res = await axios.get(
-          `https://new-ecom-1220kqevl-abhishek-k-s-s-projects.vercel.app/user/cart/${userId}`
+          `https://new-ecom-omega.vercel.app/user/cart/${userId}`
         );
         console.log("Cart response:", res.data.cart);
         setCartItems(res.data.cart || []);
@@ -48,7 +48,7 @@ const Cart = () => {
   // Remove item from cart
   const handleRemove = async (productId) => {
     try {
-      await axios.delete("https://new-ecom-1220kqevl-abhishek-k-s-s-projects.vercel.app/user/cart/remove", {
+      await axios.delete("https://new-ecom-omega.vercel.app/user/cart/remove", {
         data: { userId, productId },
       });
       setCartItems((prev) =>
@@ -136,7 +136,7 @@ const Cart = () => {
             fullWidth
             onClick={async () => {
               try {
-                await axios.delete(`https://new-ecom-1220kqevl-abhishek-k-s-s-projects.vercel.app/user/cart/clear`, {
+                await axios.delete(`https://new-ecom-omega.vercel.app/user/cart/clear`, {
                   data: { userId },
                 });
                 setCartItems([]);

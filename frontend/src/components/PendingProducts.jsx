@@ -18,7 +18,7 @@ const PendingProducts = () => {
   const fetchPendingProducts = async () => {
     try {
       const response = await axios.get(
-        "https://new-ecom-1220kqevl-abhishek-k-s-s-projects.vercel.app/products/pending"
+        "https://new-ecom-omega.vercel.app/products/pending"
       );
       setPendingProducts(response.data);
     } catch (error) {
@@ -30,7 +30,7 @@ const PendingProducts = () => {
 
   const handleApprove = async (productId) => {
     try {
-      await axios.put(`https://new-ecom-1220kqevl-abhishek-k-s-s-projects.vercel.app/products/${productId}/approve`);
+      await axios.put(`https://new-ecom-omega.vercel.app/products/${productId}/approve`);
       setPendingProducts((prev) =>
         prev.filter((product) => product._id !== productId)
       );
@@ -41,7 +41,7 @@ const PendingProducts = () => {
 
   const handleReject = async (productId) => {
     try {
-      await axios.put(`https://new-ecom-1220kqevl-abhishek-k-s-s-projects.vercel.app/products/${productId}/reject`);
+      await axios.put(`https://new-ecom-omega.vercel.app/products/${productId}/reject`);
       setPendingProducts((prev) =>
         prev.filter((product) => product._id !== productId)
       );

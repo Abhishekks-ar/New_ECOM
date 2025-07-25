@@ -30,7 +30,7 @@ const Home = () => {
     const fetchData = async () => {
       try {
         const res = await axios.get(
-          "https://new-ecom-1220kqevl-abhishek-k-s-s-projects.vercel.app/products/by-category"
+          "https://new-ecom-omega.vercel.app/products/by-category"
         );
         setCategoryProducts(res.data);
       } catch (err) {

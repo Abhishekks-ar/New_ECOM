@@ -3,7 +3,7 @@ import axios from "axios";
 
 // Create axios instance
 const axiosInstance = axios.create({
-  baseURL: "https://new-ecom-1220kqevl-abhishek-k-s-s-projects.vercel.app/api", 
+  baseURL: "https://new-ecom-omega.vercel.app/api", 
 });
 
 // Add a request interceptor
