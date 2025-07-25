@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Product = require("../model/ProductsData");
+const Product = require("../model/productsData");
 const { authenticate } = require("../controllers/authController");
 
 // POST /seller/add-product
