@@ -8,6 +8,15 @@ app.use(morgan("dev"));
 const cors = require("cors");
 app.use(cors());
 
+app.use(
+  cors({
+    origin: ['https://new-ecom-1220kqevl-abhishek-k-s-s-projects.vercel.app/'],
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE","PATCH"],
+    allowedHeaders: ['Content-Type', 'Authorization','token'],
+  })
+);
+
 require("dotenv").config();
 
 require("./db/connection");
