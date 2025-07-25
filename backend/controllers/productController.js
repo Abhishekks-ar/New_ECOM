@@ -1,4 +1,4 @@
-const Product = require("../model/ProductsData");
+const Product = require("../model/productsData");
 
 // Fetch all approved products per category
 const getAllApprovedProductsByCategory = async (req, res) => {
