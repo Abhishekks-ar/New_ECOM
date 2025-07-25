@@ -27,6 +27,10 @@ app.use("/seller", sellerRoute);
 const productRoutes = require("./routes/productRoutes");
 app.use("/products", productRoutes);
 
+app.get("/", (req, res) => {
+  res.send("API is running");
+});
+
 app.listen(process.env.PORT, () => {
   console.log(`server is listening in port ${process.env.PORT}`);
 });
