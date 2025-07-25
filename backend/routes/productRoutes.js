@@ -85,7 +85,7 @@
 
 const express = require('express');
 const router = express.Router();
-const Product = require('../model/ProductsData');
+const Product = require('../model/productsData');
 
 const {
   getAllApprovedProductsByCategory,
